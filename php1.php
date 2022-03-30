@@ -6,7 +6,7 @@
 $greet = "Hello PHP!";
 echo $greet;
 echo '<br>';
-define("Greeting", "Welcome to PHP!");
+define("Greeting", "<br>Welcome<br> to<br> PHP!");
 echo Greeting;
 ?> 
 
