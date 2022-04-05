@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body><title> HI </title>
-
 <?php
 $greet = "Hello PHP!";
 echo $greet;
@@ -13,8 +9,33 @@ $arrayList = array("Ibrhim", "Ahmed", "Asiri");
 foreach($arrayList as $arr){
     echo $arr."<br>";
 }
-
+echo "<br>______________________<br>"
 ?> 
 
-</body>
+<html>
+    <head><title>TABLE</title></head>
+    <body>
+        <table border="2">
+            <tr>
+                <th>No.</th>
+                <th clospan="10">Mobile No.</th>
+            </tr>
+
+            <?php 
+            for($i=1; $i<=10; $i++){
+                ?>
+                <tr>
+                    <td><?php echo $i; ?></td>
+                    <?php
+                    for($j=1; $j<=10; $j++){
+                        ?>
+
+                        <td><?php echo $j; ?></td>
+                    <?php } ?>
+                    </tr>
+
+                <?php } ?>
+
+        </table>
+    </body>
 </html>
