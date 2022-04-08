@@ -18,7 +18,7 @@ echo "<br>______________________<br>"
         <table border="2">
             <tr>
                 <th>No.</th>
-                <th clospan="10">Mobile No.</th>
+                <th colspan="10">Mobile No.</th>
             </tr>
 
             <?php 
