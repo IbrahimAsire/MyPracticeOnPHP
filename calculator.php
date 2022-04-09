@@ -1,12 +1,20 @@
 <html>
     <head><title>Calculator</title></head>
     <body>
-        <form>
+        <form action="calculate.php" method="post">
             <label for="num1">Number1 :</label>
-            <input type="text" name="num1" id="num1">
+            <input type="number" name="num1" id="num1">
             <br><br>
             <label for="num2">Number2 :</label>
-            <input type="text" name="num2" id="num2">
+            <input type="number" name="num2" id="num2">
+            <br><br>
+            <label for="operate">Operate :</label>
+            <select name="operate" id="operate">
+                <option value="sum">Sum +</option>
+                <option value="sub">Sub -</option>
+                <option value="multip">Multiple *</option>
+                <option value="divis">Division /</option>
+            </select>
             <br><br>
             <button type="submit" name="submit" value="submit">calculate</button>
 
