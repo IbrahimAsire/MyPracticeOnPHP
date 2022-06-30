@@ -6,8 +6,10 @@ $foasel = 4.44;
 $arr = array("ibrahim", "ahmed", "asiri");
 $arrN = array(1,2,3);
 
-echo $x;
-echo $foasel;
-echo ($arr);
-echo ($arrN);
+print_r($x);
+echo '$x';
+echo'<br>';
+print_r($arr);
+echo'<br>';
+
 ?>
