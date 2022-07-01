@@ -12,4 +12,15 @@ echo'<br>';
 print_r($arr);
 echo'<br>';
 
+$firstName = "IBRAHIM";
+$secondName = "AHMED";
+$fullName = $firstName . " " . $secondName;
+
+echo $fullName, "<br>";
+
+$oneName = "ibrahim";
+$oneName  .= " ahmed";
+
+echo $oneName;
+
 ?>
