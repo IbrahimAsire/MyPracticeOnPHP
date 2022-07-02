@@ -1,10 +1,15 @@
 <?php
 
-$x = 6;
+$x = 18;
 $y = 8;
 
 if($x > $y) {
-    echo "X beger Y";
+    echo "X Bigger than Y";
+} else if($y > $x) {
+    echo "The Y is Greater";
 } else {
-    echo "The Y is beger";
+    echo "they are equal ..";
 }
+
+
+?>
