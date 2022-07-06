@@ -26,6 +26,22 @@ if($totalSession >= 4) {
     echo "you are persented ". $totalSession . ", you are in save area";
 }
 
+echo "<br>__________________<br>";
+echo "<br>";
+$birth_Month = 14;
+
+if($birth_Month == 1 || $birth_Month == 2 || $birth_Month == 3) {
+    echo "You are birth in Q1 of year";
+} else if($birth_Month == 4 || $birth_Month == 5 || $birth_Month == 6){
+    echo "You are birth in Q2 of year";
+}  else if($birth_Month == 7 || $birth_Month == 8 || $birth_Month == 9){
+    echo "You are birth in Q3 of year";
+}  else if($birth_Month == 10 || $birth_Month == 11 || $birth_Month == 12){
+    echo "You are birth in Q4 of year";
+} else {
+    echo "THIS Q not execute";
+}
+
 
 
 
