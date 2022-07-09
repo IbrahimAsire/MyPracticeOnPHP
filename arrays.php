@@ -18,4 +18,9 @@ foreach($arr as $array){
     echo $array. "<br>";
 }
 
+echo "<br>--------------------<br>";
+
+echo "<pre>";
+print_r($arr);
+echo "</pre>"
 ?>
