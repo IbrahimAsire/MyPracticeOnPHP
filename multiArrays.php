@@ -15,6 +15,15 @@ echo "<pre>"; print_r($product1);
 
 print_r($stock[0][1]);
 
+$keys = array_keys($stock);
+for($i = 0; $i < count($stock); $i++) {
+    echo $keys[$i] . "{<br>";
+    foreach($stock[$keys[$i]] as $key => $value) {
+        echo $key . " : " . $value . "<br>";
+    }
+    echo "}<br>";
+}
+
 
 
 ?>
