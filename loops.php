@@ -25,6 +25,15 @@ for($x=1; $x <= 3; $x++){
     }
 }
 
+// drawing a right angle triangle with stars  
+for($i=0;$i<=5;$i++){  
+    for($j=1;$j<=$i;$j++){  
+        echo "* ";  
+}  
+    echo "<br>";  
+}  
+ 
+
 
 
 ?>
