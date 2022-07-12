@@ -1,36 +1,46 @@
 <?php
-$num1 = $_POST['num1'];
-$num2 = $_POST['num2'];
-$operation = $_POST['operate'];
+// To make sure that the form contains numbers
+if(isset($_POST['num1']) && isset($_POST['num2']) && !empty($_POST['num1']) && !empty($_POST['num2'])){
 
-echo $operation. "<br>";
+    $num1 = $_POST['num1'];
+    $num2 = $_POST['num2'];
+    $operation = $_POST['operate'];
 
-/*if($operation == 'sum'){
-    $cal_values = $num1 + $num2;
-} else if($operation == 'sub'){
-    $cal_values = $num1 - $num2;
-} else if($operation == 'multip'){
-    $cal_values = $num1 * $num2;
+    echo $operation. "<br>";
+     
+    // To make sure that the input is number(int)
+    if(is_int($_POST['num1']) && is_int($_POST['num2'])){
+        /*if($operation == 'sum'){
+            $cal_values = $num1 + $num2;
+        } else if($operation == 'sub'){
+            $cal_values = $num1 - $num2;
+        } else if($operation == 'multip'){
+            $cal_values = $num1 * $num2;
+        } else{
+            $cal_values = $num1 / $num2;
+        }*/
+
+        // Using switch:
+        switch($operation){
+            case 'sum':
+                $cal_values = $num1 + $num2;
+                break;
+            case 'sub' :
+                $cal_values = $num1 - $num2;
+                break;
+            case 'multip':
+                $cal_values = $num1 * $num2;
+                break;
+            default:
+            $cal_values = $num1 / $num2;
+            break;
+        }
+
+        echo $cal_values;
+    } else{
+        echo "Plz enter numberic value";
+    }
 } else{
-    $cal_values = $num1 / $num2;
-}*/
-
-// Using switch:
-switch($operation){
-    case 'sum':
-        $cal_values = $num1 + $num2;
-        break;
-    case 'sub' :
-        $cal_values = $num1 - $num2;
-        break;
-    case 'multip':
-        $cal_values = $num1 * $num2;
-        break;
-    default:
-    $cal_values = $num1 / $num2;
-    break;
+    echo "Plz enter numbers";
 }
-
-echo $cal_values;
-
 ?>
