@@ -9,6 +9,22 @@ $agesArr = array(
     'Moh' => 33
 );
 
+echo count($nameArr); //to count the number of items in the set
+echo '<br>' ; 
+echo array_sum($numArr) ; //to sum the numbers of array
+echo '<br>';
+// calculate how many times the element is repeated
+echo '<pre>'; print_r(array_count_values($numArr)); echo '</pre>';
+echo '<br>';
+
+
+array_push($nameArr, 'Mute');
+echo '<pre>'; print_r(array_count_values($nameArr)); echo '</pre>';
+array_pop($nameArr);
+echo '<pre>'; print_r(array_count_values($nameArr)); echo '</pre>';
+
+
+
 
 
 
