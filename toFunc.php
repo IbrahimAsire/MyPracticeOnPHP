@@ -4,10 +4,12 @@
     </head>
     <body>
         <div>
-            <form action="resultFunc.php" action="post">
+            <form action="resultFunc.php" method="post">
                 <label for="func1">Type a Text!</label>
                 <input type="text" name="func1" id="func1">
                 <br><br>
+                <label for="func2">Write any thing</label>
+                <input type="text" name="func2" id="func2">
                 <button type="submit" name="submit" id="submit">SHOW the result</button>
             </form>
         </div>
