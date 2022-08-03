@@ -10,6 +10,10 @@
                 <br><br>
                 <label for="func2">Write any thing</label>
                 <input type="text" name="func2" id="func2">
+                <br><br>
+                <label for="num">Enter numbers</label>
+                <input type="number" name="num" id="num">
+                <br><br>
                 <button type="submit" name="submit" id="submit">SHOW the result</button>
             </form>
         </div>
