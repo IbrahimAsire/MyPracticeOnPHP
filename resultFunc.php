@@ -8,7 +8,7 @@ echo strrev($result);
 echo "<br>____________<br>";
 echo $test;
 echo "<br> ------------<br>";
-echo sum($num);
+echo $num;
 
 
 ?>
