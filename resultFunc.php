@@ -8,7 +8,7 @@ echo strrev($result);
 echo "<br>____________<br>";
 echo $test;
 echo "<br> ------------<br>";
-echo count_chars($result) + $num;
+echo var_dump($result);
 
 
 ?>
