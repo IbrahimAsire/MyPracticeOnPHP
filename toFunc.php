@@ -14,6 +14,9 @@
                 <label for="num">Enter numbers</label>
                 <input type="number" name="num" id="num">
                 <br><br>
+                <label for="func3">Type your intersting</label>
+                <input type="text" name="func3" id="func3">
+                <br><br>
                 <button type="submit" name="submit" id="submit">SHOW the result</button>
             </form>
         </div>
