@@ -11,7 +11,7 @@ echo $test;
 echo "<br> ------------<br>";
 echo var_dump($result);
 echo "<br>_____________<br>";
-echo str_pad($intersting);
+echo strtolower($interssting);
 echo "<br>____________<br>";
 
 
