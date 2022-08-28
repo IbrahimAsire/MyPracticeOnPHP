@@ -12,8 +12,9 @@ if(!$connection) {
 }
 
 // insert new row into table
-mysqli_query($connection, "INSERT INTO `articles` (`id`, `arttitle`, `logo`, `catid`) VALUES (NULL, 'TEST', NULL, '1')");
+// mysqli_query($connection, "INSERT INTO `articles` (`id`, `arttitle`, `logo`, `catid`) VALUES (NULL, 'TEST', NULL, '1')");
 
-
+// update row in table
+mysqli_query($connection, "UPDATE articles SET `arttitle` = 'TEST from php' WHERE `id` = '6'");
 echo "Connection success";
 ?>
