@@ -11,7 +11,9 @@ if(!$connection) {
     die('connection falied');
 }
 
-mysqli_connect($connection, "INSERT INTO `category` (id, catname, logo, valid) VALUE (NULL, 'TEST', NULL, '1')");
+// insert new row into table
+mysqli_query($connection, "INSERT INTO `articles` (`id`, `arttitle`, `logo`, `catid`) VALUES (NULL, 'TEST', NULL, '1')");
+
 
 echo "Connection success";
 ?>
