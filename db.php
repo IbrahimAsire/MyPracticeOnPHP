@@ -12,13 +12,13 @@ if(!$connection) {
 }
 
 // insert new row into table
-// mysqli_query($connection, "INSERT INTO `articles` (`id`, `arttitle`, `logo`, `catid`) VALUES (NULL, 'TEST', NULL, '1')");
+mysqli_query($connection, "INSERT INTO `category` (`id`, `catname`, `logo`, `valid`) VALUES (NULL, 'STORE', NULL, '3')");
 
 // update row in table
 // mysqli_query($connection, "UPDATE articles SET `arttitle` = 'TEST from php' WHERE `id` = '6'");
 
 // delete row from table
-mysqli_query($connection, "DELETE FROM articles where id = 6");
+// mysqli_query($connection, "DELETE FROM articles where id = 7");
 
 echo "Connection success";
 ?>
