@@ -1,6 +1,9 @@
+<?php session_start();?>
 <html>
     <head><title>Calculator</title></head>
     <body>
+        <?php echo 'This name from "session" -> '. $_SESSION['userName']; ?>
+        <br><br>
         <form action="calculate.php" method="post">
             <label for="num1">Number1 :</label>
             <input type="number" name="num1" id="num1">
