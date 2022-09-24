@@ -14,8 +14,8 @@
             <label for="username">UserName</label>
             <input type="text" id="username" name="username">
             <br><br>
-            <label for="passward">Passward</label>
-            <input type="passward" name="passward" id="passward">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
             <br><br>
             <button type="submit" name="submit" value="submit">Login</button>
         </div>
