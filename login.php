@@ -11,8 +11,13 @@
         <h1>Login Page</h1>
         <div>
             <?php
-            if(isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["password"]) && !empty(["password"])) {
-                echo"Code will be here";
+            if(isset($_POST["dologin"]) && !empty($_POST["dologin"])) {
+                if(isset($_POST["username"]) && !empty($_POST["username"])) {
+                    echo "OK";
+                } else {
+                    echo "You should enter username";
+                }
+                
             } else {
                 ?>
             
@@ -23,6 +28,7 @@
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
             <br><br>
+            <input type="hidden" id="dologin" name="dologin" value="1">
             <button type="submit" name="submit" value="submit">Login</button>
             </form>
             <?php } ?>
