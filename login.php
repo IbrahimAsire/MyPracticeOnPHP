@@ -14,7 +14,7 @@
             //Check if user click Submit or not 
             if(isset($_POST["dologin"]) && !empty($_POST["dologin"])) {
                 //Check if user type username and password or not
-                if(isset($_POST["username"]) && !empty($_POST["username"])) {
+                if(isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["password"]) && !empty(["password"])) {
                     echo "OK";
                 } else {
                     echo "You should enter username";
