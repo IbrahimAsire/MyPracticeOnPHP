@@ -11,7 +11,9 @@
         <h1>Login Page</h1>
         <div>
             <?php
+            //Check if user click Submit or not 
             if(isset($_POST["dologin"]) && !empty($_POST["dologin"])) {
+                //Check if user type username and password or not
                 if(isset($_POST["username"]) && !empty($_POST["username"])) {
                     echo "OK";
                 } else {
