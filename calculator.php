@@ -2,7 +2,7 @@
 <html>
     <head><title>Calculator</title></head>
     <body>
-        <?php echo 'This name from "session" -> '. $_SESSION['userName']; ?>
+        <?php echo 'This name from "session" -> '. $_SESSION['username']; ?>
         <br><br>
         <form action="calculate.php" method="post">
             <label for="num1">Number1 :</label>
