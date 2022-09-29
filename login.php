@@ -15,9 +15,15 @@
             if(isset($_POST["dologin"]) && !empty($_POST["dologin"])) {
                 //Check if user type username and password or not
                 if(isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["password"]) && !empty(["password"])) {
-                    echo "OK";
+                    //Create session
+                    if($_POST["username"] == 'Ibrahim' && $_POST["password"] == '123456') {
+                        $_SESSION["username"] = $_POST["username"];
+                        echo "OK";
+                    } else {
+                        echo "Invalid username or password";
+                    }
                 } else {
-                    echo "You should enter username";
+                    echo "Sorry, you should enter username and password";
                 }
                 
             } else {
