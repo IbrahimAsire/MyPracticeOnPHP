@@ -2,8 +2,10 @@
 <html>
     <head><title>Calculator</title></head>
     <body>
-        <?php if(isset($_SESSION) && $_SESSION["role"] == 'admin') { ?>
+        <?php if(isset($_SESSION) && $_SESSION["role"] == 'user') { ?>
             <?php echo 'This name from "session" -> '. $_SESSION['username']; ?>
+            <br>
+            <a href="signOut.php">SignOut</a>
             <br><br>
             <form action="calculate.php" method="post">
                 <label for="num1">Number1 :</label>
