@@ -18,6 +18,7 @@ session_start();
                     //Create session
                     if($_POST["username"] == 'Ibrahim' && $_POST["password"] == '123456') {
                         $_SESSION["username"] = $_POST["username"];
+                        $_SESSION["role"] = 'user';
                         echo "OK";
                     } else {
                         echo "Invalid username or password";
