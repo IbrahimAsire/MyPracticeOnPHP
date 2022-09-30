@@ -2,10 +2,10 @@
 <html>
     <head><title>Calculator</title></head>
     <body>
-        <?php if(isset($_SESSION) && $_SESSION["role"] == 'user') { ?>
+        <?php if(isset($_SESSION["role"]) && $_SESSION["role"] == 'user') { ?>
             <?php echo 'This name from "session" -> '. $_SESSION['username']; ?>
             <br>
-            <a href="signOut.php">SignOut</a>
+            <a href="signOut.php" target="_blank">SignOut</a>
             <br><br>
             <form action="calculate.php" method="post">
                 <label for="num1">Number1 :</label>
