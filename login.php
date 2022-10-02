@@ -27,20 +27,19 @@ session_start();
                     echo "Sorry, you should enter username and password";
                 }
                 
-            } else {
-                ?>
+            } else { ?>
             
-            <form action="" method="POST" id="loginform" name="loginform">
-            <label for="username">UserName</label>
-            <input type="text" id="username" name="username">
-            <br><br>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-            <br><br>
-            <input type="hidden" id="dologin" name="dologin" value="1">
-            <button type="submit" name="submit" value="submit">Login</button>
-            </form>
-            <?php } ?>
+                <form action="" method="POST" id="loginform" name="loginform">
+                <label for="username">UserName</label>
+                <input type="text" id="username" name="username">
+                <br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <br><br>
+                <input type="hidden" id="dologin" name="dologin" value="1">
+                <button type="submit" name="submit" value="submit">Login</button>
+                </form>
+                <?php } ?>
         </div>
     </body>
 
