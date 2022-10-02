@@ -19,7 +19,7 @@ session_start();
                     if($_POST["username"] == 'Ibrahim' && $_POST["password"] == '123456') {
                         $_SESSION["username"] = $_POST["username"];
                         $_SESSION["role"] = 'user';
-                        echo "OK";
+                        echo "user name and password right .. you allow to entery";
                     } else {
                         echo "Invalid username or password";
                     }
