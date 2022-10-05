@@ -2,6 +2,7 @@
 <html>
     <head><title>Calculator</title></head>
     <body>
+        <!-- to ensure this user allow to enter and access -->
         <?php if(isset($_SESSION["role"]) && $_SESSION["role"] == 'user') { ?>
             <?php echo 'This name from "session" -> '. $_SESSION['username']; ?>
             <br>
