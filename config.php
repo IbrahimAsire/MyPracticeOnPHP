@@ -1,3 +1,4 @@
+<!-- should on me review all this again and again and again  -->
 <?php
 $db_host = "localhost";
 $db_user = "root";
