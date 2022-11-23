@@ -1,3 +1,4 @@
+<!-- should on me review all this again and again and again  -->
 <?php
 // To make sure that the form contains numbers
 if(isset($_POST['num1']) && isset($_POST['num2']) && !empty($_POST['num1']) && !empty($_POST['num2'])){
