@@ -26,7 +26,7 @@
                 <button type="submit" name="submit" value="submit">calculate</button>
 
             </form>
-        <?php } else { echo "You are not allowed enter this page"; } ?>
+        <?php } else { echo "Sorry, You are not allowed enter this page"; } ?>
     </body>
 
 
