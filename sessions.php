@@ -1,3 +1,4 @@
+<!-- Here should be I understand everything about the session  -->
 <?php
 session_start();
 
