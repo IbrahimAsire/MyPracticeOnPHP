@@ -1,3 +1,4 @@
+<!-- it's important to review all this page and from of the data come in  -->
 <?php session_start();?>
 <html>
     <head><title>Calculator</title></head>
