@@ -7,6 +7,4 @@ $_SESSION['userID'] = "1212";
 
 echo "Welcome, ". $_SESSION['userName']. "<br>". "Your ID is: ". $_SESSION['userID'];
 
-
-
 ?>

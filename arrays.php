@@ -1,6 +1,6 @@
 <?php
 
-$arr = array("Ibrhim", "Ahmed", "Hadi", "Asiri");
+$arr = array("Ibrhim", "Ahmed", "Hadi", "Asiri", "THIS IS JUST FOR TEST");
 
 for($i=0; $i <=3; $i++){
     echo $arr[$i]. "<br>";
