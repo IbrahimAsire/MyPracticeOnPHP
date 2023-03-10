@@ -8,7 +8,7 @@ session_start();
         <title>Login</title>
     </head>
     <body>
-        <h1>Login Page for practice</h1>
+        <h1>Login Page for practice BECAUSE the Practice very very very fital/important ...</h1>
         <div>
             <?php
             //Check if user click Submit or not 
